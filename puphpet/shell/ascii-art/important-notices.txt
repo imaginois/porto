@@ -96,6 +96,17 @@ only for you
 * vagrant ssh [NAME] - login into the specified box\
 * vagrant destroy [NAME] - delete virtual machine and files
 
+
+********************** HOSTS FILE **************************
+
+Paste this into your hosts file
+
+192.168.200.100 radio.local
+192.168.200.200 vstb.local
+
+for Windows users       @-> C:\Windows\System32\drivers\etc\hosts
+for Linux and Mac users @-> /etc/hosts
+
 ============================================================
 
       #1) Respect the privacy of others.
