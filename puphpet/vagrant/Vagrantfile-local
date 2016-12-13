@@ -404,7 +404,7 @@ machines.each do |i, machine|
       s.args = ['startup-once-unprivileged', 'startup-always-unprivileged']
     end
 
-    machine_id.vm.provision :shell, :path => 'puphpet/shell/important-notices.sh'
+    machine_id.vm.provision :shell, run: 'always', :path => 'puphpet/shell/important-notices.sh'
 
     customKey  = "#{dir}/puphpet/files/dot/ssh/id_rsa"
     vagrantKey = "#{vagrant_dot}/machines/#{machine['id']}/#{ENV['VAGRANT_DEFAULT_PROVIDER']}/private_key"

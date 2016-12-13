@@ -1,19 +1,52 @@
-                                          _
-                                         / )
-                                    .--.; |    _...,-"""-,
-                     .-""-.-""""-. /   _`'-._.'   /`      \
-                    /'     \      \|  (/'-._/     )        ;
-            .-""""-;       (       '--' /-'    _           |
-          .'       |        ;    e     /       a  ,       ;
-         /          \       |      __.'`-.__,    ;       /
-        /            `._     ;    .-'     `--.,__.\    /`
-       //|              \     \,-'                /\_.'
-      // |               `;.___>              /,-'.
-    /`|  /                |`\      _..---\    |    \
-    |/  /     _,.-----\   |  \   /`|      |   |\    \
-       /    .;   |    |   |   \ /  |      |   | \    )
-      |    / |   \    /   |\..' \   \     |   \  \..'
-   jgs \../  \.../    \.../ \.../---'     \.../
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMms//+yNMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMo      `dMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMN        /MMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMM+      `yhdNMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMdo::/s+...-:sNMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNo`   -  `+mMMMMMMMMMMMMMM
+MMMmhhhhhhhhhhhhhhhhhhhhhhhNMMMNy:    -.      oNMMMMMMMMMMMM
+MMMs                      -:::.    `+mMo       .mMMMMMMMMMMM
+MMMs                     `-    `-+hMMMMMh`      `dMMMMMMMMMM
+MMMs                      `yddNMMMMMMMMMMy       `MMMMMMMMMM
+MMMs                       hMMMMMMMMMMMMMM.      .MMMMMMMMMM
+MMMs                       hMMMMMMMMMMMMd:       /MMMMMMMMMM
+MMMs                       hMMMMMMMMMMm/         .MMMMMMMMMM
+MMMs                       hMMMMMMMMMy`    :hy    NMMMMMMMMM
+MMMs                       hMMMMMMMMM:    hMMM.   :dMMMMMMMM
+MMMs                       hMMMMMMMMMm`   -NMMm-    `:oydMMM
+MMMs                       hMMMMMMMMMMm.   :MMMMd+-      /MM
+MMMs                       hMMMMMMMMMMMm.   +MMMMMMMdyo++dMM
+MMMdooooooooooooooooooooooomMMMMMMMMMMMMm`  `MMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNyyNMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+
+    _____   ______  _____  _____ _______ _______ _______     
+   |_____] |_____/ |     |   |   |______ |          |        
+   |       |    \_ |_____| __|   |______ |_____     |        
+                                                             
+           _____   _____   ______ _______  _____               
+          |_____] |     | |_____/    |    |     |              
+          |       |_____| |    \_    |    |_____|              
+                                                     
+
+                          ABOUT
+          =======================================
+
+This project aims to bring a unified development enviroment, 
+that is cross-platform and cross-client and technology 
+indipendant. Such unification of environtments will
+provide developers with more easily configurable, manageble 
+and debuggable workflow, thus reducing the work of creation
+by removing hard choices and adding automated procedures
 
 
           READ ME FOR SOME IMPORTANT INFORMATION!
@@ -42,24 +75,34 @@ above), then your VM was generated successfully!
   "$ vagrant provision" and your VM will be updated with the
   changes you requested!
 
-Did something go wrong? Don't worry! I can (maybe) help!
-Please go to our Github issues page at:
-
-https://github.com/puphpet/puphpet/issues
-
-and search for your problem. If you do not find your problem
-answered, open a new ticket!
-
 ------------------------------------------------------------
 PLEASE REMEMBER TO INCLUDE THE CONTENTS OF YOUR
 "puphpet/config.yaml" FILE.
+
+* you can create a config-custom.yaml file which is 
+ignored by the VCS and will extend and apply config options
+only for you
 ------------------------------------------------------------
 
-Make sure to xxx out any potential API keys or passwords
-that you do not want others to see!
+******************* DEVELOPER SECTION **********************
 
-Happy programming!
-                                             - Juan Treminio
+* follow the SOLID principle
+* follow the KISS principle
+* use short & semantic names for functions and variable names
+* update the porto repo regulary, more good stuff is comming
+
+****************** COMMANDS CHEATSHEET *********************
+
+* vagrant ssh [NAME] - login into the specified box\
+* vagrant destroy [NAME] - delete virtual machine and files
+
+============================================================
+
+      #1) Respect the privacy of others.
+      #2) Think before you type.
+      #3) With great power comes great responsibility.
+
+      May the source be with you!
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 |  ____                _      _    _                    _  |
@@ -69,3 +112,6 @@ Happy programming!
 | |_| \_\___|\__,_|\__,_| /_/   \_\_.__/ \___/ \_/ \___(_) |
 |                                                          |
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Question, feedback and requests go to: 
+                          - mderibanov@minervanetworks.com
