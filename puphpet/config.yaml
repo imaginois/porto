@@ -20,8 +20,8 @@ vagrantfile:
                         update_guest_tools: 0
                 machines:
                     vflm_jb9qjfymc5zr:
-                        id: radio
-                        hostname: radio.local
+                        id: host
+                        hostname: host.local
                         network:
                             private_network: 192.168.200.100
                             forwarded_port:
@@ -30,48 +30,6 @@ vagrantfile:
                                     guest: '22'
                                 vflmnfp_umym08mphyyd:
                                     host: '8100'
-                                    guest: '80'
-                        memory: '512'
-                        cpus: '1'
-                    vflm_40uzpzw91ou2:
-                        id: vstb
-                        hostname: vstb.local
-                        network:
-                            private_network: 192.168.200.110
-                            forwarded_port:
-                                vflmnfp_yfvokyypwehs:
-                                    host: '2110'
-                                    guest: '22'
-                                vflmnfp_00wya4eberiq:
-                                    host: '8110'
-                                    guest: '80'
-                        memory: '512'
-                        cpus: '1'
-                    vflm_foeya38s6nmo:
-                        id: stb
-                        hostname: stb.local
-                        network:
-                            private_network: 192.168.200.120
-                            forwarded_port:
-                                vflmnfp_8w01r0h7ne29:
-                                    host: '2120'
-                                    guest: '22'
-                                vflmnfp_hym9vhbdn1rv:
-                                    host: '8120'
-                                    guest: '80'
-                        memory: '512'
-                        cpus: '1'
-                    vflm_vnxoz8pvfvoe:
-                        id: webclient
-                        hostname: webclient.local
-                        network:
-                            private_network: 192.168.200.130
-                            forwarded_port:
-                                vflmnfp_obmr1bxnfadu:
-                                    host: '2130'
-                                    guest: '22'
-                                vflmnfp_ldvu0u23udrj:
-                                    host: '8130'
                                     guest: '80'
                         memory: '512'
                         cpus: '1'
