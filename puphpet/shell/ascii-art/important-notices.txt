@@ -102,7 +102,10 @@ only for you
 Paste this into your hosts file
 
 192.168.200.100 radio.local
-192.168.200.200 vstb.local
+192.168.200.110 vstb.local
+192.168.200.120 stb.local
+192.168.200.130 webclient.local
+192.168.200.140 ladybug.local
 
 for Windows users       @-> C:\Windows\System32\drivers\etc\hosts
 for Linux and Mac users @-> /etc/hosts
@@ -125,4 +128,4 @@ for Linux and Mac users @-> /etc/hosts
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Question, feedback and requests go to: 
-                          - mderibanov@minervanetworks.com
+                            - mderibanov@minervanetworks.com
