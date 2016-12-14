@@ -19,61 +19,75 @@ vagrantfile:
                         check_guest_tools: 0
                         update_guest_tools: 0
                 machines:
-                    vflm_9guggkg3gddx:
+                    vflm_jb9qjfymc5zr:
                         id: radio
                         hostname: radio.local
                         network:
                             private_network: 192.168.200.100
                             forwarded_port:
-                                vflmnfp_qw4klsgpufb4:
+                                vflmnfp_6haw0ubngcev:
                                     host: '2100'
                                     guest: '22'
-                                vflmnfp_kia4mnsitfin:
+                                vflmnfp_umym08mphyyd:
                                     host: '8100'
                                     guest: '80'
                         memory: '512'
                         cpus: '1'
-                    vflm_n83losm03cil:
+                    vflm_40uzpzw91ou2:
                         id: vstb
                         hostname: vstb.local
                         network:
                             private_network: 192.168.200.110
                             forwarded_port:
-                                vflmnfp_q0z8brs33d38:
+                                vflmnfp_yfvokyypwehs:
                                     host: '2110'
                                     guest: '22'
-                                vflmnfp_13r93n86h08h:
+                                vflmnfp_00wya4eberiq:
                                     host: '8110'
                                     guest: '80'
                         memory: '512'
                         cpus: '1'
-                    vflm_7ek3ei5szoqh:
+                    vflm_foeya38s6nmo:
                         id: stb
                         hostname: stb.local
                         network:
                             private_network: 192.168.200.120
                             forwarded_port:
-                                vflmnfp_re4bu88hzmd6:
+                                vflmnfp_8w01r0h7ne29:
                                     host: '2120'
                                     guest: '22'
-                                vflmnfp_abh66v0if5uy:
+                                vflmnfp_hym9vhbdn1rv:
                                     host: '8120'
                                     guest: '80'
                         memory: '512'
                         cpus: '1'
-                    vflm_9c85d39wbmwf:
+                    vflm_vnxoz8pvfvoe:
                         id: webclient
                         hostname: webclient.local
                         network:
                             private_network: 192.168.200.130
                             forwarded_port:
-                                vflmnfp_llxyji0i7s8q:
+                                vflmnfp_obmr1bxnfadu:
                                     host: '2130'
                                     guest: '22'
-                                vflmnfp_5n2p4wx8st18:
+                                vflmnfp_ldvu0u23udrj:
                                     host: '8130'
                                     guest: '80'
                         memory: '512'
+                        cpus: '1'
+                    vflm_rz6ng4s49fen:
+                        id: ladybug
+                        hostname: ladybug.local
+                        network:
+                            private_network: 192.168.200.140
+                            forwarded_port:
+                                vflmnfp_ze0ff68ttude:
+                                    host: '2140'
+                                    guest: '22'
+                                vflmnfp_m4zxjguui5q9:
+                                    host: '8140'
+                                    guest: '80'
+                        memory: '256'
                         cpus: '1'
         provision:
             puppet:
@@ -85,7 +99,7 @@ vagrantfile:
                     - '--verbose'
                     - '--hiera_config /vagrant/puphpet/puppet/hiera.yaml'
         synced_folder:
-            vflsf_36tj5g6y7md2:
+            vflsf_9q7xq1f6wjrc:
                 source: ../radio/
                 target: /var/www/radio
                 sync_type: default
@@ -107,7 +121,7 @@ vagrantfile:
                     auto: 'true'
                 owner: www-data
                 group: www-data
-            vflsf_5hymqo5pvosx:
+            vflsf_qjrvvdg34pfn:
                 source: ../VSTB/
                 target: /var/www/vstb
                 sync_type: default
@@ -129,7 +143,7 @@ vagrantfile:
                     auto: 'true'
                 owner: www-data
                 group: www-data
-            vflsf_vqh2bz2jydno:
+            vflsf_39ndp6ett5gd:
                 source: ../Webclient/ML
                 target: /var/www/stb
                 sync_type: default
@@ -151,9 +165,31 @@ vagrantfile:
                     auto: 'true'
                 owner: www-data
                 group: www-data
-            vflsf_b9bx5e1hxkun:
+            vflsf_afgf15s8vyle:
                 source: ../Minerva_WebClient/ML
                 target: /var/www/webclient
+                sync_type: default
+                smb:
+                    smb_host: ''
+                    smb_username: ''
+                    smb_password: ''
+                    mount_options:
+                        dir_mode: '0775'
+                        file_mode: '0664'
+                rsync:
+                    args:
+                        - '--verbose'
+                        - '--archive'
+                        - '-z'
+                    exclude:
+                        - .vagrant/
+                        - .git/
+                    auto: 'true'
+                owner: www-data
+                group: www-data
+            vflsf_4sx4vplev3do:
+                source: ../ladybug
+                target: /var/www/ladybug
                 sync_type: default
                 smb:
                     smb_host: ''
@@ -203,6 +239,8 @@ server:
         - tree
         - htop
         - npm
+        - libapache2-mod-php7.0
+        - php7.0-mbstring
 users_groups:
     install: '1'
     groups:
@@ -236,7 +274,7 @@ nginx:
         names_hash_bucket_size: 128
     upstreams: {  }
     vhosts:
-        nxv_riah1a49d7lr:
+        nxv_73uew4tztkxn:
             server_name: awesome.dev
             server_aliases:
                 - www.awesome.dev
@@ -252,7 +290,7 @@ nginx:
             rewrite_to_https: '1'
             spdy: '1'
             locations:
-                nxvl_kfl8b43kvdpd:
+                nxvl_cpie707l7m4v:
                     www_root: ''
                     location: /
                     index_files:
@@ -268,7 +306,7 @@ nginx:
                     fastcgi_split_path: ''
                     proxy: ''
                     proxy_redirect: ''
-                nxvl_j4fhh7r446eb:
+                nxvl_9wb02sw0yd0s:
                     www_root: ''
                     location: '~ \.php$'
                     try_files:
@@ -300,7 +338,7 @@ apache:
         - proxy_fcgi
         - rewrite
     vhosts:
-        av_zd49i5ix5jsk:
+        av_nmq7ymdc4x8g:
             servername: radio.local
             serveraliases:
                 - www.radio.local
@@ -319,7 +357,7 @@ apache:
             ssl_protocol: ''
             ssl_cipher: ''
             directories:
-                avd_fbyvfa7lsb4k:
+                avd_0nyf3ro8cfmy:
                     path: /var/www/radio
                     options:
                         - Indexes
@@ -331,13 +369,13 @@ apache:
                         - 'all granted'
                     custom_fragment: ''
                     files_match:
-                        avdfm_p61sc0ipz02g:
+                        avdfm_hu7vgb28thw9:
                             path: \.php$
                             sethandler: 'proxy:fcgi://127.0.0.1:9000'
                             custom_fragment: ''
                             provider: filesmatch
                     provider: directory
-        av_jcijy043a2te:
+        av_2oj4to9cwvax:
             servername: vstb.local
             serveraliases:
                 - www.vstb.local
@@ -351,7 +389,7 @@ apache:
             ssl_certs_dir: ''
             ssl_protocol: ''
             ssl_cipher: ''
-        av_t9o2uzyui3iw:
+        av_9c0xvbmx0dza:
             servername: stb.local
             serveraliases:
                 - www.stb.local
@@ -365,11 +403,25 @@ apache:
             ssl_certs_dir: ''
             ssl_protocol: ''
             ssl_cipher: ''
-        av_nx3cxbltdncd:
+        av_3ashc74ql5e8:
             servername: webclient.local
             serveraliases:
                 - www.webclient.local
             docroot: /var/www/webclient
+            port: '80'
+            custom_fragment: ''
+            ssl: '0'
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
+            ssl_protocol: ''
+            ssl_cipher: ''
+        av_ws4rjqiwnaw5:
+            servername: ladybug.local
+            serveraliases:
+                - www.ladybug.local
+            docroot: /var/www/ladybug/public
             port: '80'
             custom_fragment: ''
             ssl: '0'
@@ -403,7 +455,7 @@ php:
     fpm_ini:
         error_log: /var/log/php-fpm.log
     fpm_pools:
-        phpfp_9a2c67w7jww7:
+        phpfp_3l26cn7wn0i9:
             ini:
                 prefix: www
                 listen: '127.0.0.1:9000'
@@ -446,7 +498,7 @@ drush:
 ruby:
     install: '1'
     versions:
-        rv_gzapvtx1j5j8:
+        rv_p7933czz2fqe:
             default: '1'
             bundler: '1'
             version: 2.3.1
@@ -464,6 +516,7 @@ nodejs:
         version: '6'
     npm_packages:
         - npm
+        - gulp
         - grunt
         - grunt-cli
         - bower
@@ -491,15 +544,15 @@ mariadb:
         override_options: {  }
     adminer: 0
     users:
-        mariadbnu_ykgsm9lperkm:
+        mariadbnu_phneqc2qjk8r:
             name: dbuser
             password: '123'
     databases:
-        mariadbnd_h99m503d6n8u:
+        mariadbnd_aq7t8ja9mrpq:
             name: dbname
             sql: ''
     grants:
-        mariadbng_fio5zvaqxfv1:
+        mariadbng_4ngm488hk2c3:
             user: dbuser
             table: '*.*'
             privileges:
@@ -512,16 +565,27 @@ mysql:
         override_options: {  }
     adminer: '1'
     users:
-        mysqlnu_j53vpsgpar1x:
+        mysqlnu_fb3gxvilj1zv:
             name: radio
             password: oidar
+        mysqlnu_fjd5cec31abf:
+            name: ladybug
+            password: gubydal
     databases:
-        mysqlnd_d5kudrtn97up:
+        mysqlnd_msak2w4m52jo:
             name: radio
             sql: ''
+        mysqlnd_fidmyvgfbanh:
+            name: ladybug
+            sql: /var/www/ladybug/sql/ladybug.sql
     grants:
-        mysqlng_ghza01jzurtp:
+        mysqlng_01uguzq2dcj3:
             user: radio
+            table: '*.*'
+            privileges:
+                - ALL
+        mysqlng_a74yrfg2dcj3:
+            user: ladybug
             table: '*.*'
             privileges:
                 - ALL
@@ -585,7 +649,7 @@ elastic_search:
         version: 2.3.1
         java_install: true
     instances:
-        esi_ezblz4uaezok:
+        esi_w9orr96dlkfk:
             name: es-01
 solr:
     install: '0'
