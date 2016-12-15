@@ -33,20 +33,6 @@ vagrantfile:
                                     guest: '80'
                         memory: '512'
                         cpus: '1'
-                    vflm_rz6ng4s49fen:
-                        id: ladybug
-                        hostname: ladybug.local
-                        network:
-                            private_network: 192.168.200.140
-                            forwarded_port:
-                                vflmnfp_ze0ff68ttude:
-                                    host: '2140'
-                                    guest: '22'
-                                vflmnfp_m4zxjguui5q9:
-                                    host: '8140'
-                                    guest: '80'
-                        memory: '256'
-                        cpus: '1'
         provision:
             puppet:
                 manifests_path: puphpet/puppet/manifests
@@ -197,6 +183,7 @@ server:
         - tree
         - htop
         - npm
+        - php7.0
         - libapache2-mod-php7.0
         - php7.0-mbstring
 users_groups:

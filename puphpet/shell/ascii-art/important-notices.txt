@@ -127,5 +127,5 @@ for Linux and Mac users @-> /etc/hosts
 |                                                          |
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Question, feedback and requests go to: 
+Questions, feedback and requests go to: 
                             - mderibanov@minervanetworks.com

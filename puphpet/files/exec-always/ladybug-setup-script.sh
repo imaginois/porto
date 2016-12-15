@@ -4,12 +4,15 @@ if ! [[ -f '/usr/local/bin/composer' ]]; then
     exit 0
 fi
 
-if [[ $(hostname) == 'ladybug' ]]; then
+# if [[ $(hostname) == 'ladybug' ]]; then
     cd /var/www/ladybug
     composer dump-autoload
     composer install --no-scripts
-    composer install
-    npm install
+    composer install && composer update
+    php artisan migrate
+    sudo ln -s /usr/bin/nodejs /usr/bin/node
+    sudo npm install
+    sudo bower install
     wait
     exit 0
-fi
+# fi
