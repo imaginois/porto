@@ -43,28 +43,28 @@ vagrantfile:
                     - '--verbose'
                     - '--hiera_config /vagrant/puphpet/puppet/hiera.yaml'
         synced_folder:
-            vflsf_9q7xq1f6wjrc:
-                source: ../radio/
-                target: /var/www/radio
-                sync_type: default
-                smb:
-                    smb_host: ''
-                    smb_username: ''
-                    smb_password: ''
-                    mount_options:
-                        dir_mode: '0775'
-                        file_mode: '0664'
-                rsync:
-                    args:
-                        - '--verbose'
-                        - '--archive'
-                        - '-z'
-                    exclude:
-                        - .vagrant/
-                        - .git/
-                    auto: 'true'
-                owner: www-data
-                group: www-data
+            # vflsf_9q7xq1f6wjrc:
+            #     source: ../radio/
+            #     target: /var/www/radio
+            #     sync_type: default
+            #     smb:
+            #         smb_host: ''
+            #         smb_username: ''
+            #         smb_password: ''
+            #         mount_options:
+            #             dir_mode: '0775'
+            #             file_mode: '0664'
+            #     rsync:
+            #         args:
+            #             - '--verbose'
+            #             - '--archive'
+            #             - '-z'
+            #         exclude:
+            #             - .vagrant/
+            #             - .git/
+            #         auto: 'true'
+            #     owner: www-data
+            #     group: www-data
             vflsf_qjrvvdg34pfn:
                 source: ../VSTB/
                 target: /var/www/vstb
