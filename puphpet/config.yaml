@@ -20,8 +20,8 @@ vagrantfile:
                         update_guest_tools: 0
                 machines:
                     vflm_jb9qjfymc5zr:
-                        id: host
-                        hostname: host.local
+                        id: porto
+                        hostname: porto.local
                         network:
                             private_network: 192.168.200.100
                             forwarded_port:
@@ -68,6 +68,28 @@ vagrantfile:
             vflsf_qjrvvdg34pfn:
                 source: ../VSTB/
                 target: /var/www/vstb
+                sync_type: default
+                smb:
+                    smb_host: ''
+                    smb_username: ''
+                    smb_password: ''
+                    mount_options:
+                        dir_mode: '0775'
+                        file_mode: '0664'
+                rsync:
+                    args:
+                        - '--verbose'
+                        - '--archive'
+                        - '-z'
+                    exclude:
+                        - .vagrant/
+                        - .git/
+                    auto: 'true'
+                owner: www-data
+                group: www-data
+            vflsf_pfjegh3jgfhe8:
+                source: ../session/
+                target: /var/www/session
                 sync_type: default
                 smb:
                     smb_host: ''
@@ -324,7 +346,21 @@ apache:
             servername: vstb.local
             serveraliases:
                 - www.vstb.local
-            docroot: /var/www/vstb/ML/web/source
+            docroot: /var/www/vstb/ML/src
+            port: '80'
+            custom_fragment: ''
+            ssl: '0'
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
+            ssl_protocol: ''
+            ssl_cipher: ''
+        av_484jf73hghpo:
+            servername: session
+            serveraliases:
+                - www.session
+            docroot: /var/www/session
             port: '80'
             custom_fragment: ''
             ssl: '0'
