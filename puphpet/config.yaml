@@ -342,13 +342,13 @@ apache:
                             custom_fragment: ''
                             provider: filesmatch
                     provider: directory
-        av_2oj4to9cwvax:
+        av_vstblocal:
             servername: vstb.local
             serveraliases:
                 - www.vstb.local
             docroot: /var/www/vstb/ML/src
             port: '80'
-            custom_fragment: ''
+            custom_fragment: '/var/www/vstb/ML/custom_fragment.txt'
             ssl: '0'
             ssl_cert: ''
             ssl_key: ''
