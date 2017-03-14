@@ -203,6 +203,7 @@ server:
         - nano
         - git
         - tree
+        - unzip
         - htop
         - npm
         - php7.0
