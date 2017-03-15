@@ -1,0 +1,2 @@
+#Alias "/client" "C:/Minerva/session/client"
+Header set Access-Control-Allow-Origin "*"
