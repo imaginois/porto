@@ -208,6 +208,7 @@ server:
         - php7.0
         - libapache2-mod-php7.0
         - php7.0-mbstring
+        - docker.io
 users_groups:
     install: '1'
     groups:
