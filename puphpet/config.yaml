@@ -203,6 +203,7 @@ server:
         - nano
         - git
         - tree
+        - unzip
         - htop
         - npm
         - php7.0
@@ -305,51 +306,52 @@ apache:
     modules:
         - proxy_fcgi
         - rewrite
+        - headers
     vhosts:
-        av_nmq7ymdc4x8g:
-            servername: radio.local
-            serveraliases:
-                - www.radio.local
-            docroot: /var/www/radio
-            port: '80'
-            setenv:
-                - 'APP_ENV dev'
-            setenvif:
-                - 'Authorization "(.*)" HTTP_AUTHORIZATION=$1'
-            custom_fragment: ''
-            ssl: '0'
-            ssl_cert: ''
-            ssl_key: ''
-            ssl_chain: ''
-            ssl_certs_dir: ''
-            ssl_protocol: ''
-            ssl_cipher: ''
-            directories:
-                avd_0nyf3ro8cfmy:
-                    path: /var/www/radio
-                    options:
-                        - Indexes
-                        - FollowSymlinks
-                        - MultiViews
-                    allow_override:
-                        - All
-                    require:
-                        - 'all granted'
-                    custom_fragment: ''
-                    files_match:
-                        avdfm_hu7vgb28thw9:
-                            path: \.php$
-                            sethandler: 'proxy:fcgi://127.0.0.1:9000'
-                            custom_fragment: ''
-                            provider: filesmatch
-                    provider: directory
-        av_2oj4to9cwvax:
+        # av_radiolocal:
+        #     servername: radio.local
+        #     serveraliases:
+        #         - www.radio.local
+        #     docroot: /var/www/radio
+        #     port: '80'
+        #     setenv:
+        #         - 'APP_ENV dev'
+        #     setenvif:
+        #         - 'Authorization "(.*)" HTTP_AUTHORIZATION=$1'
+        #     custom_fragment: ''
+        #     ssl: '0'
+        #     ssl_cert: ''
+        #     ssl_key: ''
+        #     ssl_chain: ''
+        #     ssl_certs_dir: ''
+        #     ssl_protocol: ''
+        #     ssl_cipher: ''
+        #     directories:
+        #         avd_0nyf3ro8cfmy:
+        #             path: /var/www/radio
+        #             options:
+        #                 - Indexes
+        #                 - FollowSymlinks
+        #                 - MultiViews
+        #             allow_override:
+        #                 - All
+        #             require:
+        #                 - 'all granted'
+        #             custom_fragment: ''
+        #             files_match:
+        #                 avdfm_hu7vgb28thw9:
+        #                     path: \.php$
+        #                     sethandler: 'proxy:fcgi://127.0.0.1:9000'
+        #                     custom_fragment: ''
+        #                     provider: filesmatch
+        #             provider: directory
+        av_vstblocal:
             servername: vstb.local
             serveraliases:
                 - www.vstb.local
             docroot: /var/www/vstb/ML/src
             port: '80'
-            custom_fragment: ''
+            custom_fragment: '/home/vagrant/custom_fragments/vstb'
             ssl: '0'
             ssl_cert: ''
             ssl_key: ''
@@ -357,13 +359,13 @@ apache:
             ssl_certs_dir: ''
             ssl_protocol: ''
             ssl_cipher: ''
-        av_484jf73hghpo:
+        av_session:
             servername: session
             serveraliases:
                 - www.session
             docroot: /var/www/session
             port: '80'
-            custom_fragment: ''
+            custom_fragment: '/home/vagrant/custom_fragments/session'
             ssl: '0'
             ssl_cert: ''
             ssl_key: ''
@@ -371,7 +373,7 @@ apache:
             ssl_certs_dir: ''
             ssl_protocol: ''
             ssl_cipher: ''
-        av_9c0xvbmx0dza:
+        av_stblocal:
             servername: stb.local
             serveraliases:
                 - www.stb.local
@@ -385,7 +387,7 @@ apache:
             ssl_certs_dir: ''
             ssl_protocol: ''
             ssl_cipher: ''
-        av_3ashc74ql5e8:
+        av_webclientlocal:
             servername: webclient.local
             serveraliases:
                 - www.webclient.local
@@ -399,7 +401,7 @@ apache:
             ssl_certs_dir: ''
             ssl_protocol: ''
             ssl_cipher: ''
-        av_ws4rjqiwnaw5:
+        av_ladybuglocal:
             servername: ladybug.local
             serveraliases:
                 - www.ladybug.local
