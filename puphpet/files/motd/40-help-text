@@ -1,6 +1,5 @@
 #!/bin/sh
 
-
 printf "\n"
 printf " * Documentation:  https://confluence.minervanetworks.com/Vagrant \n"
 printf " * Management:     https://jira.minervanetworks.com [RHEL-LINK]   \n"

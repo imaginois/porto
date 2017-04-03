@@ -1,7 +1,9 @@
 #!/bin/sh
 
-cat << 'EOF'
+cat << EOF
 ---------- Wisdom of the day ----------
+
 `/usr/games/fortune -as | sed "s/^/       /"`
+
 ---------------------------------------
-'EOF'
+EOF

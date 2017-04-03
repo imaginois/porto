@@ -3,3 +3,5 @@
 [ -f /etc/motd.tail ] && cat /etc/motd.tail || true
 
 printf "Happy coding!"
+printf '\n'
+printf '\n'

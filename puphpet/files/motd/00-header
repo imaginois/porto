@@ -1,29 +1,31 @@
 #!/bin/sh
 
-	UPTIME_DAYS=$(expr `cat /proc/uptime | cut -d '.' -f1` % 31556926 / 86400)
-	UPTIME_HOURS=$(expr `cat /proc/uptime | cut -d '.' -f1` % 31556926 % 86400 / 3600)
-	UPTIME_MINUTES=$(expr `cat /proc/uptime | cut -d '.' -f1` % 31556926 % 86400 % 3600 / 60)
+printf '\n'
 
-	cat << EOF
-	-------------------------- SERVER INFO --------------------------
+UPTIME_DAYS=$(expr `cat /proc/uptime | cut -d '.' -f1` % 31556926 / 86400)
+UPTIME_HOURS=$(expr `cat /proc/uptime | cut -d '.' -f1` % 31556926 % 86400 / 3600)
+UPTIME_MINUTES=$(expr `cat /proc/uptime | cut -d '.' -f1` % 31556926 % 86400 % 3600 / 60)
 
-	Name: hostname
-	Uptime: $UPTIME_DAYS days, $UPTIME_HOURS hours, $UPTIME_MINUTES minutes
+cat << EOF
+-------------------------- SERVER INFO --------------------------
 
-	CPU: `cat /proc/cpuinfo | grep 'model name' | head -1 | cut -d':' -f2`
-	Memory: `free -m | head -n 2 | tail -n 1 | awk {'print $2'}`M
-	Swap: `free -m | tail -n 1 | awk {'print $2'}`M
-	Disk: `df -h / | awk '{ a = $2 } END { print a }'`
-	Distro: `lsb_release -s -d` with `uname -r`
+Name: hostname
+Uptime: $UPTIME_DAYS days, $UPTIME_HOURS hours, $UPTIME_MINUTES minutes
 
-	CPU Load: `cat /proc/loadavg | awk '{print $1 ", " $2 ", " $3}'`
-	Free Memory: `free -m | head -n 2 | tail -n 1 | awk {'print $4'}`M
-	Free Swap: `free -m | tail -n 1 | awk {'print $4'}`M
-	Free Disk: `df -h / | awk '{ a = $2 } END { print a }'`
+CPU: `cat /proc/cpuinfo | grep 'model name' | head -1 | cut -d':' -f2`
+Memory: `free -m | head -n 2 | tail -n 1 | awk {'print $2'}`M
+Swap: `free -m | tail -n 1 | awk {'print $2'}`M
+Disk: `df -h / | awk '{ a = $2 } END { print a }'`
+Distro: `lsb_release -s -d` with `uname -r`
 
-	Public Address: `ifconfig enp0s8 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}'`
-	Cloud Address: `ifconfig docker0 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}'`
-	EOF
+CPU Load: `cat /proc/loadavg | awk '{print $1 ", " $2 ", " $3}'`
+Free Memory: `free -m | head -n 2 | tail -n 1 | awk {'print $4'}`M
+Free Swap: `free -m | tail -n 1 | awk {'print $4'}`M
+Free Disk: `df -h / | awk '{ a = $2 } END { print a }'`
 
-	printf "This is %s (%s).\n" "$DISTRIB_DESCRIPTION" "$(uname -r)"
-	printf "\n"
+Public Address: `ifconfig enp0s8 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}'`
+Cloud Address: `ifconfig docker0 | grep "inet addr" | awk -F: '{print $2}' | awk '{print $1}'`
+EOF
+
+printf "This is %s (%s).\n" "$DISTRIB_DESCRIPTION" "$(uname -r)"
+printf "\n"
