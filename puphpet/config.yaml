@@ -565,7 +565,8 @@ mysql:
             sql: ''
         mysqlnd_fidmyvgfbanh:
             name: ladybug
-            sql: /var/www/ladybug/sql/ladybug.sql
+            sql: ''
+            #sql: /var/www/ladybug/sql/ladybug.sql
     grants:
         mysqlng_01uguzq2dcj3:
             user: radio
