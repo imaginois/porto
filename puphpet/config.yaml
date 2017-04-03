@@ -31,8 +31,8 @@ vagrantfile:
                                 vflmnfp_umym08mphyyd:
                                     host: '8100'
                                     guest: '80'
-                                vflmnfp_pklasdjkasd8:
-                                    host: '8000'
+                                vflmnfp_89as89jhj1po:
+                                    host: '8888'
                                     guest: '8000'
                         memory: '512'
                         cpus: '1'
@@ -212,6 +212,8 @@ server:
         - php7.0
         - libapache2-mod-php7.0
         - php7.0-mbstring
+        - docker.io
+        - fortune-mod
 users_groups:
     install: '1'
     groups:

@@ -12,7 +12,7 @@ fi
     php artisan migrate
     sudo ln -s /usr/bin/nodejs /usr/bin/node
     sudo npm install
-    sudo bower install
+    bower install
     wait
     exit 0
 # fi
