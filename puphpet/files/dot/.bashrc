@@ -4,6 +4,13 @@
 [ -r ~/.git-prompt.sh ] && source ~/.git-prompt.sh
 [ -r /usr/local/rvm/scripts/rvm ] && source /usr/local/rvm/scripts/rvm
 
+
+# Add bash aliases.
+if [ -f ~/.bash_aliases ]; then
+    source ~/.bash_aliases
+fi
+
+
 __has_parent_dir () {
     # Utility function so we can test for things like .git/.hg without firing up a
     # separate process

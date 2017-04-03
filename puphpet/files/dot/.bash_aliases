@@ -1,1 +1,3 @@
-source ~/.bashrc
+#source ~/.bashrc
+
+alias bitch='sudo'
