@@ -31,6 +31,9 @@ vagrantfile:
                                 vflmnfp_umym08mphyyd:
                                     host: '8100'
                                     guest: '80'
+                                vflmnfp_89as89jhj1po:
+                                    host: '8888'
+                                    guest: '8000'
                         memory: '512'
                         cpus: '1'
         provision:
