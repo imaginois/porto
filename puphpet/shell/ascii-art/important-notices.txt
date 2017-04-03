@@ -76,9 +76,6 @@ above), then your VM was generated successfully!
   changes you requested!
 
 ------------------------------------------------------------
-PLEASE REMEMBER TO INCLUDE THE CONTENTS OF YOUR
-"puphpet/config.yaml" FILE.
-
 * you can create a config-custom.yaml file which is 
 ignored by the VCS and will extend and apply config options
 only for you
@@ -93,9 +90,45 @@ only for you
 
 ****************** COMMANDS CHEATSHEET *********************
 
-* vagrant ssh [NAME] - login into the specified box\
-* vagrant destroy [NAME] - delete virtual machine and files
+## Generic commands
+* ls – directory listing
+* ls -al – formatted listing with hidden files
+* cd dir - change directory to dir
+* cd – change to home
+* pwd – show current directory
+* mkdir dir – create a directory dir
+* rm file – delete file
+* rm -rf dir – force remove directory dir *
+* cp file1 file2 – copy file1 to file2
+* mv file1 file2 – rename or move file1 to file2
+* ln -s file link – create symbolic link link to file
+* touch file – create or update file
+* cat > file – places standard input into file
+* more file – output the contents of file
+* tail -f file – output the contents of file as it grows, starting with the last 10 lines
 
+## Process management commands
+* ps – display your currently active processes
+* top – display all running processes
+* kill pid – kill process id pid
+* killall proc – kill all processes named proc *
+
+## Searching for strings and files
+* grep pattern files – search for pattern in files
+* grep -r pattern dir – search recursively for
+* pattern in dir
+* command | grep pattern – search for pattern in the output of command
+* locate file – find all instances of file
+
+****************** VAGRANT CHEATSHEET *********************
+
+* vagrant up - starts vagrant environment (also provisions only on the FIRST vagrant up)
+* vagrant status - outputs status of the vagrant machine
+* vagrant halt - stops the vagrant machine
+* vagrant reload - restarts vagrant machine, loads new Vagrantfile configuration
+* vagrant provision - forces reprovisioning of the vagrant machine
+* vagrant ssh - connects to machine via SSH
+* vagrant destroy - stops and deletes all traces of the vagrant machine
 
 ********************** HOSTS FILE **************************
 
