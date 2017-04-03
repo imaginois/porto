@@ -6,8 +6,8 @@ fi
 
 # if [[ $(hostname) == 'ladybug' ]]; then
     cd /var/www/ladybug
-    composer dump-autoload
-    composer install --no-scripts
+    sudo composer dump-autoload
+    sudo composer install --no-scripts
     composer install && composer update
     php artisan migrate
     sudo ln -s /usr/bin/nodejs /usr/bin/node
