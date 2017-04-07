@@ -364,6 +364,20 @@ apache:
             ssl_certs_dir: ''
             ssl_protocol: ''
             ssl_cipher: ''
+        av_stagingvstblocal:
+            servername: staging.vstb.local
+            serveraliases:
+                - www.staging.vstb.local
+            docroot: /var/www/vstb/staging/src
+            port: '80'
+            custom_fragment: '/home/vagrant/custom_fragments/vstb'
+            ssl: '0'
+            ssl_cert: ''
+            ssl_key: ''
+            ssl_chain: ''
+            ssl_certs_dir: ''
+            ssl_protocol: ''
+            ssl_cipher: ''
         av_session:
             servername: session
             serveraliases:
