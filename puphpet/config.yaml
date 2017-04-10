@@ -214,6 +214,7 @@ server:
         - php7.0-mbstring
         - docker.io
         - fortune-mod
+        - nginx
 users_groups:
     install: '1'
     groups:
