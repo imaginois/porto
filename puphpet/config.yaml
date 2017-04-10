@@ -215,7 +215,7 @@ server:
         - docker.io
         - docker-machine
         - fortune-mod
-        - nginx
+        - docker-compose
 users_groups:
     install: '1'
     groups:
