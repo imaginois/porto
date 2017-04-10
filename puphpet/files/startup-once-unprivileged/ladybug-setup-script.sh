@@ -1,7 +1,7 @@
 #!/bin/sh
 if ! [[ -f '/usr/local/bin/composer' ]]; then
     echo " @@@@@ Composer is not installed on this machine. Type sudo apt-get install composer to install."
-    exit 0
+    exit 1
 fi
 
 # if [[ $(hostname) == 'ladybug' ]]; then
