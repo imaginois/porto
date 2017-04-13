@@ -398,7 +398,7 @@ apache:
                 - www.stb.local
             docroot: /var/www/stb/source/
             port: '80'
-            custom_fragment: ''
+            custom_fragment: '/home/vagrant/custom_fragments/stb'
             ssl: '0'
             ssl_cert: ''
             ssl_key: ''
