@@ -136,6 +136,7 @@ Paste this into your hosts file
 
 192.168.200.100  vstb.local staging.vstb.local session 
 192.168.200.100  stb.local
+192.168.200.100  radio.local
 
 for Windows users       @-> C:\Windows\System32\drivers\etc\hosts
 for Linux and Mac users @-> /etc/hosts
