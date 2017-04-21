@@ -37,7 +37,7 @@ vagrantfile:
                                 vflmnfp_89asdjdj71po:
                                     host: '5000'
                                     guest: '5000'
-                                vflmnfp_89asdjdj71po:
+                                vflmnfp_84gjoo9kl35f:
                                     host: '5001'
                                     guest: '5001'
                         memory: '512'
