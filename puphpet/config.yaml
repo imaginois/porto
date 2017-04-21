@@ -34,6 +34,12 @@ vagrantfile:
                                 vflmnfp_89as89jhj1po:
                                     host: '8888'
                                     guest: '8000'
+                                vflmnfp_89asdjdj71po:
+                                    host: '5000'
+                                    guest: '5000'
+                                vflmnfp_89asdjdj71po:
+                                    host: '5001'
+                                    guest: '5001'
                         memory: '512'
                         cpus: '1'
         provision:
@@ -213,7 +219,7 @@ server:
         - libapache2-mod-php7.0
         - php7.0-mbstring
         - docker.io
-        - docker-machine
+        # - docker-machine
         - fortune-mod
         - docker-compose
 users_groups:
