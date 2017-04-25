@@ -35,11 +35,11 @@ vagrantfile:
                                     host: '8888'
                                     guest: '8000'
                                 vflmnfp_89asdjdj71po:
-                                    host: '5000'
-                                    guest: '5000'
+                                    host: '6000'
+                                    guest: '6000'
                                 vflmnfp_84gjoo9kl35f:
-                                    host: '5001'
-                                    guest: '5001'
+                                    host: '6001'
+                                    guest: '6001'
                         memory: '512'
                         cpus: '1'
         provision:
