@@ -9,7 +9,7 @@ UPTIME_MINUTES=$(expr `cat /proc/uptime | cut -d '.' -f1` % 31556926 % 86400 % 3
 cat << EOF
 -------------------------- SERVER INFO --------------------------
 
-Name: hostname
+Name: `hostname`
 Uptime: $UPTIME_DAYS days, $UPTIME_HOURS hours, $UPTIME_MINUTES minutes
 
 CPU: `cat /proc/cpuinfo | grep 'model name' | head -1 | cut -d':' -f2`
