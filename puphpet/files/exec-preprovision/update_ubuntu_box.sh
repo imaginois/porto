@@ -1,4 +1,4 @@
 #!/bin/sh
-rm -f /etc/apt/sources.list.d/repo.mysql.com-apt.list
+rm -rf /etc/apt/sources.list.d/repo.mysql*
 apt-get update
-apt-get upgrade -y
+# apt-get upgrade -y
