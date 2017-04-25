@@ -10,3 +10,4 @@ apt-key add jcameron-key.asc
 apt-get update
 apt-get install webmin -y
 sudo ufw allow 10000
+sudo ufw allow 80

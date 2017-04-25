@@ -41,8 +41,8 @@ vagrantfile:
                                     host: '6001'
                                     guest: '6001'
                                 vflmnfp_9rei9we9k98d:
-                                    host: '9099'
-                                    guest: '9099'
+                                    host: '10000'
+                                    guest: '10000'
                         memory: '512'
                         cpus: '1'
         provision:
