@@ -35,8 +35,8 @@ vagrantfile:
                                     host: '8888'
                                     guest: '8000'
                                 vflmnfp_89asdjdj71po:
-                                    host: '6000'
-                                    guest: '6000'
+                                    host: '6002'
+                                    guest: '6002'
                                 vflmnfp_84gjoo9kl35f:
                                     host: '6001'
                                     guest: '6001'
