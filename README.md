@@ -12,6 +12,8 @@ The project provides several exquisite sub-modules to increase the ease of work 
 
 
 ### Features ###
+- Easy to manage and configure
+- Supports custom configuration per developer machine
 - Apache virtual hosts for all active projects
 - Ladybug Web based debugger for remote logging
 - traefik: load balancing server, composed of multiple docker container. Has the ability to simulate and replicate multiple clients to a server using a nginx proxy with load balancing pool
