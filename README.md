@@ -1,5 +1,5 @@
 # Porto #
-### portable dev enviroment setup ###
+#### Portable dev enviroment setup ####
 
 This project aims to bring a unified development environment, 
 that is cross-platform, cross-client and technology 
@@ -10,6 +10,8 @@ by removing hard choices and adding automated procedures
 
 The project provides several exquisite sub-modules to increase the ease of work with the technological ecosystem of the company and all potentially incoming project. The default setup provides the following features out of the box bu default:
 
+
+### Features ###
 - Apache virtual hosts for all active projects
 - Ladybug Web based debugger for remote logging
 - traefik: load balancing server, composed of multiple docker container. Has the ability to simulate and replicate multiple clients to a server using a nginx proxy with load balancing pool
@@ -19,22 +21,28 @@ The project provides several exquisite sub-modules to increase the ease of work 
 - As close as possible development environment to the production environment
 
 
-### How do I get set up? ###
+### Installation ###
+* Download and install [Vagrant](https://www.vagrantup.com/downloads.html)
+* Download and install [Virtual Box](https://www.virtualbox.org/wiki/Downloads)
+* Restart PC
+* Get porto repository (//depot/SB/porto/). Map it to the root directory of your workspace.
+* Open CMD or Terminal in the directory
+* run `vagrant up`
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+### Troubleshooting ###
+
+* directory **../radio** was not found -> create empty directory in the root directory of your workspace
+
+### API ###
+You can find fake back offices running in the virtual machine.
+
+http://localhost:6002 - vstb
+http://localhost:6001 - stb
 
 ### Contribution guidelines ###
+TBD
 
-* Writing tests
-* Code review
-* Other guidelines
+### FAQ ###
 
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+### Contacts ###
+Requests and suggestions go to **mderibanov@minervaderibanov.com**
