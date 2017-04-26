@@ -1,1 +1,2 @@
 Header set Access-Control-Allow-Origin "*"
+ProxyPass /api http://localhost:8080/api
