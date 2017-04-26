@@ -47,4 +47,4 @@ TBD
 ### FAQ ###
 
 ### Contacts ###
-Requests and suggestions go to **mderibanov@minervaderibanov.com**
+Questions and suggestions go to **mderibanov@minervaderibanov.com**
