@@ -38,8 +38,8 @@ The project provides several exquisite sub-modules to increase the ease of work 
 ### API ###
 You can find fake back offices running in the virtual machine.
 
-http://localhost:6002 - vstb
-http://localhost:6001 - stb
+- http://localhost:6002 - vstb
+- http://localhost:6001 - stb
 
 ### Contribution guidelines ###
 TBD
