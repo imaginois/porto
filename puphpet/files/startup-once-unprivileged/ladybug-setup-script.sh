@@ -10,7 +10,9 @@ composer install --no-scripts
 
 sudo apt-get autoremove -y
 sudo apt-get install nodejs -y
-# sudo apt-get install libapache2-mod-php
+sudo apt-get install libapache2-mod-php
+sudo a2dismod worker
+sudo service apache2 restart
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 sudo chown -R $USER:$(id -gn $USER) /home/vagrant/.config
 sudo npm i -g npm@^4
