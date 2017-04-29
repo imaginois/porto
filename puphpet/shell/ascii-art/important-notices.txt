@@ -149,6 +149,8 @@ You can find fake backoffices running in the virtual machine.
 http://localhost:6002 - vstb
 http://localhost:6001 - stb
 
+
+https://localhost:10000 - webmin 
 ============================================================
 
       #1) Respect the privacy of others.
