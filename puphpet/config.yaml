@@ -40,6 +40,9 @@ vagrantfile:
                                 vflmnfp_84gjoo9kl35f:
                                     host: '6001'
                                     guest: '6001'
+                                vflmnfp_84gjoo9kl35f:
+                                    host: '4001'
+                                    guest: '4001'
                                 vflmnfp_9rei9we9k98d:
                                     host: '10000'
                                     guest: '10000'
@@ -551,6 +554,8 @@ nodejs:
         - grunt-cli
         - documentation
         - istanbul
+        - bower
+        - yarn
 hhvm:
     install: '0'
     composer: '1'
