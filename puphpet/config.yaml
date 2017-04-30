@@ -43,6 +43,12 @@ vagrantfile:
                                 vflmnfp_84gjoo9kl35f:
                                     host: '4001'
                                     guest: '4001'
+                                vflmnfp_123i9asdpo9d:
+                                    host: '7100'
+                                    guest: '7100'
+                                vflmnfp_ldfk99sdko9d:
+                                    host: '71'
+                                    guest: '71'
                                 vflmnfp_9rei9we9k98d:
                                     host: '10000'
                                     guest: '10000'
