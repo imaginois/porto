@@ -46,6 +46,11 @@ You can find fake back offices running in the virtual machine.
 
 ### Wiki ###
 
+#### Gor quick start guide
+
+
+In the home directory `/home/vagrant` you can find a folder named scripts. 
+
 ### Contribution guidelines ###
 TBD
 
