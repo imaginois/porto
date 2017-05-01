@@ -20,23 +20,22 @@
 #     
 traefik:
   image: traefik
-  command: --web --docker --docker.domain=docker.localhost --logLevel=DEBUG
+  command: --web --docker --docker.domain=traefik.local --logLevel=DEBUG
   ports:
-    - "71:71"
-    - "7100:7100"
+    - "71:80"
+    - "7100:8080"
     # - "443:443"
   volumes:
     - /var/run/docker.sock:/var/run/docker.sock
     - /dev/null:/traefik.toml
 
-machine:
+vstb:
   image: katacoda/docker-http-server
   labels:
-    - "traefik.backend=machine-echo"
-    - "traefik.frontend.rule=Host:machine-echo.example.com"
-
-echo:
+    - "traefik.backend=vstb"
+    - "traefik.frontend.rule=Host:vstb.local"
+stb:
   image: katacoda/docker-http-server:v2
   labels:
-    - "traefik.backend=echo"
-    - "traefik.frontend.rule=Host:echo-echo.example.com"
+    - "traefik.backend=stb"
+    - "traefik.frontend.rule=Host:stb.local"
