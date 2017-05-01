@@ -41,6 +41,11 @@ You can find fake back offices running in the virtual machine.
 - http://localhost:6002 - vstb
 - http://localhost:6001 - stb
 
+- https://localhost:10000 - Webmin 
+- https://localhost:8100/adminer.php - Adminer 
+
+### Wiki ###
+
 ### Contribution guidelines ###
 TBD
 
