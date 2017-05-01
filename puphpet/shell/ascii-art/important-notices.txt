@@ -152,13 +152,14 @@ http://localhost:6001 - stb
 
 https://localhost:10000 - webmin 
 https://localhost:8100/adminer.php - Adminer 
+
 ============================================================
 
-      #1) Respect the privacy of others.
-      #2) Think before you type.
-      #3) With great power comes great responsibility.
+#1) Respect the privacy of others.
+#2) Think before you type.
+#3) With great power comes great responsibility.
 
-      May the source be with you!
+May the source be with you!
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 |  ____                _      _    _                    _  |
