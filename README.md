@@ -50,7 +50,7 @@ You can find fake back offices running in the virtual machine.
 To start working with Gor, you need to have a web server running on your machine, and a terminal to run commands. This is already provided for you out of the box in this project.
 
 Note:
-_If you are just poking around, you can quickly start the server by calling gor file-server :8000, this will start a simple file server of the current directory on port 8000._
+_If you are just poking around, you can quickly start the server by calling `gor file-server :8000`, this will start a simple file server of the current directory on port 8000._ You can also achieve the same result by running `python -m SimpleHTTPServer 8000` on any machine running python
 
 
 #### Capturing web traffic
