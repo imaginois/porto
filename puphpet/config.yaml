@@ -37,13 +37,19 @@ vagrantfile:
                                 vflmnfp_89asdjdj71po:
                                     host: '6002'
                                     guest: '6002'
-                                vflmnfp_84gjoo9kl35f:
+                                vflmnfp_84gjoo9asd0l:
                                     host: '6001'
                                     guest: '6001'
                                 vflmnfp_84gjoo9kl35f:
                                     host: '4001'
                                     guest: '4001'
-                                vflmnfp_123i9asdpo9d:
+                                vflmnfp_84gjoo9kasdf:
+                                    host: '4002'
+                                    guest: '4002'
+                                vflmnfp_84gjoo9k11df:
+                                    host: '4003'
+                                    guest: '4003'
+                                vflmnfp_123i9asd9jkd:
                                     host: '7100'
                                     guest: '7100'
                                 vflmnfp_ldfk99sdko9d:

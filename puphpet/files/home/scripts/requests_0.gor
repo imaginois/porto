@@ -1,0 +1,59 @@
+1 7964f4475defdb14a130b04415e8851ae63becb7 1493645602826416310
+GET /logs HTTP/1.1
+Host: ladybug.local
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+DNT: 1
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en-US,en;q=0.8,bg;q=0.6
+Cookie: XSRF-TOKEN=eyJpdiI6InB2ZVB2UDZ5MytiVXpJeXduVjRHa3c9PSIsInZhbHVlIjoidTVMejRpNmJ3N2hZY3A0b2ZlVWpKZWpNVGtKUWJ1amxkM2RtaFh2bkZwdncza1c3MGZmdWtRY2VGV1NjcUd6eTQraUMrQ0Q5dkhaa2t0MjdublV4bEE9PSIsIm1hYyI6ImVjMmMxOTI4NWVmNDY5OTYyMzU0YzFkOGQ2NjkzMjVhOGY2NmJjZTlkNDFhZGRjZTdjYzk0OGUyZmE4ZmIyNWIifQ%3D%3D; laravel_session=eyJpdiI6InBlRXZJd0NLdEYzNyt4cEJmUmhwNlE9PSIsInZhbHVlIjoiYnNXWU1UQWNhaHFwbTZmSnZXUWR0UTI1c0pQSzQ3SjN2b0FtRjc5Q0xXTzZTRjhuYVJ3WUM3dkpleFwvY3JIMElCWFwvbE1zNGN2NkFtVUJSdTRMUTlGdz09IiwibWFjIjoiODExZGE1N2NiZDZjYmIzYjA3ZWZjYzZmNzBjNDg4MTAxMTYwZTQ5ZmI5NjMzZjBlMDYwNTNhYWVkY2IwOTFiYSJ9
+
+
+🐵🙈🙉
+1 56fd4de084a51455bdf88f112780d0d338250724 1493645602826432835
+GET /favicon.ico HTTP/1.1
+Host: ladybug.local
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+DNT: 1
+Referer: http://ladybug.local/logs
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en-US,en;q=0.8,bg;q=0.6
+Cookie: XSRF-TOKEN=eyJpdiI6IjJCRkM1ZEdoOFdjMDluOW95anAyRkE9PSIsInZhbHVlIjoiK2dYUUt2amtyRjNLTVYyeDJNQktWRFNQQk5INll3MkxHZzBaZ2NhYWVcL25laHVJVytvV1VneEdicTVGcTFvY2VwbzNjRkplbW9Ic2hnczd0R1AwYzlBPT0iLCJtYWMiOiJiNWVmMTBlM2ExMmJlMDQyNjllZGZmNDZkZjgyZDZiYTZiM2UxM2FhOGI0ZGZmODkzYjhlZTEzNDI5MjE0YjQzIn0%3D; laravel_session=eyJpdiI6IkRKMkdOeUY1KzJzdjFaYytsOTJVM1E9PSIsInZhbHVlIjoiZWZqNWRSQXpkYjY4eG5QT3FXb0NOdzhIUEtOVUN6XC9lYjNUMDJpbVNZZG85aTJpSktMNlZMWlBNc1VjUUh5Z3Y1b21GY1FhSHFETGhIK1kzSkFETWNRPT0iLCJtYWMiOiI2MGM5ZDJmMzU5NGJjM2RjZjQ5MzQyZDJmOTc5NzQxY2E0MmU0YWY5MTdhNjFmYjcxMWZiNDI1MDJmNmI5MDlmIn0%3D
+
+
+🐵🙈🙉
+1 d99310034f677d9036f6f87d5efb19b1f0a74432 1493645606834420573
+GET /logs HTTP/1.1
+Host: ladybug.local
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+DNT: 1
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en-US,en;q=0.8,bg;q=0.6
+Cookie: XSRF-TOKEN=eyJpdiI6IjJCRkM1ZEdoOFdjMDluOW95anAyRkE9PSIsInZhbHVlIjoiK2dYUUt2amtyRjNLTVYyeDJNQktWRFNQQk5INll3MkxHZzBaZ2NhYWVcL25laHVJVytvV1VneEdicTVGcTFvY2VwbzNjRkplbW9Ic2hnczd0R1AwYzlBPT0iLCJtYWMiOiJiNWVmMTBlM2ExMmJlMDQyNjllZGZmNDZkZjgyZDZiYTZiM2UxM2FhOGI0ZGZmODkzYjhlZTEzNDI5MjE0YjQzIn0%3D; laravel_session=eyJpdiI6IkRKMkdOeUY1KzJzdjFaYytsOTJVM1E9PSIsInZhbHVlIjoiZWZqNWRSQXpkYjY4eG5QT3FXb0NOdzhIUEtOVUN6XC9lYjNUMDJpbVNZZG85aTJpSktMNlZMWlBNc1VjUUh5Z3Y1b21GY1FhSHFETGhIK1kzSkFETWNRPT0iLCJtYWMiOiI2MGM5ZDJmMzU5NGJjM2RjZjQ5MzQyZDJmOTc5NzQxY2E0MmU0YWY5MTdhNjFmYjcxMWZiNDI1MDJmNmI5MDlmIn0%3D
+
+
+🐵🙈🙉
+1 7713e766c41c2aa887b425562e3674c9f83a1154 1493645606834437154
+GET /favicon.ico HTTP/1.1
+Host: ladybug.local
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36
+Accept: image/webp,image/*,*/*;q=0.8
+DNT: 1
+Referer: http://ladybug.local/logs
+Accept-Encoding: gzip, deflate, sdch
+Accept-Language: en-US,en;q=0.8,bg;q=0.6
+Cookie: XSRF-TOKEN=eyJpdiI6IkRBbDQwTEdpQU1XNHI3aXBwVU1BV3c9PSIsInZhbHVlIjoiM1dJUDk2UFJmUThMMkJzR0E0SHA3XC9wNFwveGpRaTR4dCtSODJRdU9UQ3QxSjFoQmt1c0pBTko3UDJXVUVENkxOdXhRRWtiUWtEMTV1QnFUWlk4VmppQT09IiwibWFjIjoiNzAwN2Y3ZGMwZDhmN2M0N2Y4NTBjMTBiNDRhMTI3MjhmMTg5ODJkODIwODgxMzM3ZDRiOTkyN2I5MWRiMDdkZSJ9; laravel_session=eyJpdiI6Ino1TzduZEVaenZOV2ZzbUlaK1hjYmc9PSIsInZhbHVlIjoickd3TEV6OUZMa2hjMmM0YlV3dVFpYl
