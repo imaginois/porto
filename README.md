@@ -49,15 +49,11 @@ You can find fake back offices running in the virtual machine.
 
 ### Traefik Quick Start guide
 
+### Ladybug Quick Start guide
 
 ### Wiki ###
 https://bitbucket.org/minervanetworks/porto/wiki/Home
 
-
-#### Gor quick start guide
-
-
-In the home directory `/home/vagrant` you can find a folder named scripts. 
 
 ### Contribution guidelines ###
 TBD
