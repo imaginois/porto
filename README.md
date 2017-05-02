@@ -46,36 +46,8 @@ You can find fake back offices running in the virtual machine.
 
 
 ### Gor Quick Start guide
-#### Installation
-To start working with Gor, you need to have a web server running on your machine, and a terminal to run commands. This is already provided for you out of the box in this project.
 
-Note:
-_If you are just poking around, you can quickly start the server by calling `gor file-server :8000`, this will start a simple file server of the current directory on port 8000._ You can also achieve the same result by running `python -m SimpleHTTPServer 8000` on any machine running python
-
-
-#### Capturing web traffic
-This command says to listen for all network activity happening on port 8000 and log it to stdout. If you are familiar with `tcpdump`, we are going to implement similar functionality.
-`sudo gor --input-raw :8000 --output-stdout`
-
-Make a few requests by opening `http://localhost:8000` in your browser, or just by calling curl in terminal `curl http://localhost:8000`. You should see that `gor` outputs all the HTTP requests and responses right to the terminal window where it is running.
-
-__Gor is not a proxy:__ you do not need to put 3-rd party tool to your critical path. Instead `Gor` just silently analyzes the traffic of your application and does not affect it anyhow.
-
-#### Replaying
-Instead of `--output-stdout` we will use `--output-http` and provide URL of second server: 
-`sudo gor --input-raw :8000 --output-http="http://localhost:8001"`
-
-Make few requests to first server. You should see them replicated to the second one, voila!
-
-#### Saving requests to file and replaying them later
-Sometimes it's not possible to replay requests in real time; `Gor` allows you to save requests to the file and replay them later.
-
-First use `--output-file` to save them: `sudo gor --input-raw :8000 --output-file=requests.gor`. This will create new file and continuously write all captured requests to it.
-
-Let's re-run Gor, but now to replay requests from file: `gor --input-file requests.gor --output-http="http://localhost:8001"`. You should see all the recorded requests coming to the second server, and they will be replayed in the same order and with exactly same timing as they were recorded.
-
-
-
+### Traefik Quick Start guide
 
 
 ### Wiki ###
