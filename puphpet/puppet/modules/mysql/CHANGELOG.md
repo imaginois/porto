@@ -1,4 +1,4 @@
-## Supported Release 3.9.0
+﻿## Supported Release 3.9.0
 ### Summary
 This release adds Percona 5.7 support and compatibility with Ubuntu 16.04, in addition to various bugfixes.
 

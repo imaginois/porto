@@ -1,4 +1,4 @@
-$LOAD_PATH.unshift(File.join(File.dirname(__FILE__),"..","..",".."))
+﻿$LOAD_PATH.unshift(File.join(File.dirname(__FILE__),"..","..",".."))
 require 'puppet/provider/parsedfile'
 require 'puppet/util/package'
 require 'puppet_x/elastic/hash'

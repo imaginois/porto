@@ -1,4 +1,4 @@
-## Supported Release 1.6.0
+﻿## Supported Release 1.6.0
 ### Summary
 This release expands functionality around sub-settings and adds the `refreshonly` parameter so the user can specify whether a resource should or should not respond to a refresh event.
 

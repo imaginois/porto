@@ -1,4 +1,4 @@
-# Configure EPEL (Extra Repository for Enterprise Linux)
+﻿# Configure EPEL (Extra Repository for Enterprise Linux)
 
 # About
 This module basically just mimics the epel-release rpm. The same repos are

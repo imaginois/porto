@@ -1,4 +1,4 @@
-## Supported Release 1.6.0
+﻿## Supported Release 1.6.0
 ### Summary
 
 Addition of a new supported OS, along with several other features and bugfixes.
