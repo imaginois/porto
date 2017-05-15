@@ -1,4 +1,4 @@
-# mongodb puppet module
+﻿# mongodb puppet module
 
 [![Build Status](https://travis-ci.org/puppetlabs/puppetlabs-mongodb.png?branch=master)](https://travis-ci.org/puppetlabs/puppetlabs-mongodb)
 

@@ -1,4 +1,4 @@
-v1.4.1
+﻿v1.4.1
 ======
 0685d57 Add support for Composer’s --ignore-platform-reqs option
         

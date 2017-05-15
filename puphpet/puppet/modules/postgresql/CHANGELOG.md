@@ -1,4 +1,4 @@
-## Supported Release 4.8.0
+﻿## Supported Release 4.8.0
 ### Summary
 This release primarily fixes an issue with `postgresql_conf` values of ipaddresses being considered floats and not getting quoted.
 

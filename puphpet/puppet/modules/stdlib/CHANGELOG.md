@@ -1,4 +1,4 @@
-## Supported Release 4.12.0
+﻿## Supported Release 4.12.0
 ###Summary
 
 This release provides several new functions, bugfixes, modulesync changes, and some documentation updates.
