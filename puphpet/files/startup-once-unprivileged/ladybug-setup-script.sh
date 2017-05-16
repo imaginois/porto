@@ -61,7 +61,7 @@ php artisan key:generate
 echo "Delete node_modules"
 sudo rm -Rf node_modules
 
-ll
+ls -la
 
 npm list -g --depth=0
 
