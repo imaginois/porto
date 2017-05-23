@@ -1,4 +1,5 @@
 #!/bin/sh
 cd /var/www/radio
-sudo npm install
+bower install
+sudo yarn install
 # sudo bower install
