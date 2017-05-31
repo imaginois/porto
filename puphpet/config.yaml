@@ -180,6 +180,28 @@ vagrantfile:
                     auto: 'true'
                 owner: www-data
                 group: www-data
+            vflsf_jr89fjllq0ldf:
+                source: ../akasha
+                target: /home/vagrant/akasha
+                sync_type: default
+                smb:
+                    smb_host: ''
+                    smb_username: ''
+                    smb_password: ''
+                    mount_options:
+                        dir_mode: '0775'
+                        file_mode: '0664'
+                rsync:
+                    args:
+                        - '--verbose'
+                        - '--archive'
+                        - '-z'
+                    exclude:
+                        - .vagrant/
+                        - .git/
+                    auto: 'true'
+                owner: www-data
+                group: www-data
         usable_port_range:
             start: 10200
             stop: 10500
@@ -191,10 +213,10 @@ vagrantfile:
         username: vagrant
         guest_port: 'false'
         keep_alive: '1'
-        forward_agent: 'false'
+        forward_agent: 'true'
         forward_x11: 'false'
         shell: 'bash -l'
-        insert_key: 'false'
+        insert_key: 'true'
     vagrant:
         host: detect
     proxy:
@@ -537,7 +559,7 @@ python:
 nodejs:
     install: '1'
     settings:
-        version: '6'
+        version: '8'
     npm_packages:
         - npm
         - grunt
