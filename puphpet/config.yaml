@@ -216,7 +216,7 @@ vagrantfile:
         forward_agent: 'true'
         forward_x11: 'false'
         shell: 'bash -l'
-        insert_key: 'true'
+        insert_key: 'false'
     vagrant:
         host: detect
     proxy:
