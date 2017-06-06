@@ -1,5 +1,6 @@
 #!/bin/sh
 cd /var/www/radio
+sudo npm i -g phantomjs
 bower install
-sudo yarn install
+yarn install
 # sudo bower install
