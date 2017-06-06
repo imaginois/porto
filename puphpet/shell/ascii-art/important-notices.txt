@@ -142,7 +142,16 @@ Paste this into your hosts file
 for Windows users       @-> C:\Windows\System32\drivers\etc\hosts
 for Linux and Mac users @-> /etc/hosts
 
-********************** Back Office Urls **************************
+********************** GIT COMMIT GUIDELINES ***************
+
+Prefix commit message with the following characters for 
+easier readibility and regEx filtering
+
+[ ! ] - Fix. Fixes a bug
+[ ? ] - Work in progress. Testing something. Potential bugs
+[ $ ] - Resolves a story. Major feature finished and working
+
+********************** Back Office Urls ********************
 
 You can find fake backoffices running in the virtual machine.
 
