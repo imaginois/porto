@@ -568,6 +568,7 @@ nodejs:
         - istanbul
         - bower
         - yarn
+        - json-server
 hhvm:
     install: '0'
     composer: '1'
