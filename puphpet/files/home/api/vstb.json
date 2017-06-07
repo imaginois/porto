@@ -8,6 +8,29 @@
     { "stripeName": "alltitles" },
     { "stripeName": "livetv" }
   ],
+  "continueWatching": [
+    { 
+      "poster": "http://netflixlife.com/files/2015/05/inglourious-basterds-.jpg" ,
+      "title": "inglourious-basterds"
+    },
+    { 
+      "poster": "http://netflixlife.com/files/2015/05/inglourious-basterds-.jpg" ,
+      "title": "inglourious-basterds"
+    },
+    { 
+      "poster": "http://netflixlife.com/files/2015/05/inglourious-basterds-.jpg" ,
+      "title": "inglourious-basterds"
+    },
+    { 
+      "poster": "http://netflixlife.com/files/2015/05/inglourious-basterds-.jpg" ,
+      "title": "inglourious-basterds"
+    },
+    { 
+      "poster": "http://netflixlife.com/files/2015/05/inglourious-basterds-.jpg" ,
+      "title": "inglourious-basterds"
+    },
+  ],
+
   "comments": [
     { "id": 1, "body": "some comment", "postId": 1 }
   ],
