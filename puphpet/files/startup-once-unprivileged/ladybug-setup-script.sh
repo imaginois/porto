@@ -1,12 +1,21 @@
 #!/bin/sh
 if [ ! -f '/usr/local/bin/composer' ]; then
     echo " @@@@@ Composer is not installed on this machine. Type sudo apt-get install composer to install."
+    echo " Trying to install automatically."
+    sudo apt-get install curl php-cli php-mbstring git unzip -y
+    curl -sS https://getcomposer.org/installer -o composer-setup.php
+    sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+    composer
+    echo "Composer installation finished without errors. You can run the script againg to resume normal execution"
     exit 2
 fi
 
 echo "########## Start Ladybug setup script ##########"
 sudo apt-get autoremove -y
 sudo apt-get install libapache2-mod-php php-mbstring php-mysql -y
+sudo apt-get install nodejs npm -y
+sudo npm i -g yarn bower
+
 sudo a2dismod worker
 echo "Restarting apache service:"
 sudo service apache2 restart
