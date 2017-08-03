@@ -1,4 +1,4 @@
-﻿MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
@@ -129,6 +129,7 @@ only for you
 * vagrant provision - forces reprovisioning of the vagrant machine
 * vagrant ssh - connects to machine via SSH
 * vagrant destroy - stops and deletes all traces of the vagrant machine
+* vagrant porto - list ports open on the VM
 
 ********************** HOSTS FILE **************************
 
@@ -138,20 +139,13 @@ Paste this into your hosts file
 192.168.200.100  vstb.local staging.vstb.local session
 192.168.200.100  stb.local
 192.168.200.100  radio.local
+192.168.200.100  ladybug.local
+192.168.200.100  penates.local
 
 for Windows users       @-> C:\Windows\System32\drivers\etc\hosts
 for Linux and Mac users @-> /etc/hosts
 
-********************** GIT COMMIT GUIDELINES ***************
-
-Prefix commit message with the following characters for 
-easier readibility and regEx filtering
-
-[ ! ] - Fix. Fixes a bug
-[ ? ] - Work in progress. Testing something. Potential bugs
-[ $ ] - Resolves a story. Major feature finished and working
-
-********************** Back Office Urls ********************
+********************** Back Office Urls **************************
 
 You can find fake backoffices running in the virtual machine.
 
