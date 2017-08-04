@@ -26,6 +26,9 @@ vagrantfile:
                             private_network: 192.168.200.100
                             forwarded_port:
                                 vflmnfp_6haw0ubngcev:
+                                    host: '3000'
+                                    guest: '3000'
+                                vflmnfp_d885jtf8gja9:
                                     host: '2100'
                                     guest: '22'
                                 vflmnfp_umym08mphyyd:
@@ -232,7 +235,7 @@ server:
         - tree
         - unzip
         - htop
-        - npm
+        # - npm
         - php7.0
         - libapache2-mod-php7.0
         - php7.0-mbstring
@@ -342,7 +345,7 @@ apache:
             servername: penates.local
             serveraliases:
                 - www.penates.local
-            docroot: /var/www/penates
+            docroot: /var/www/penates/dist
             port: '80'
             setenv:
                 - 'APP_ENV dev'
@@ -358,7 +361,7 @@ apache:
             ssl_cipher: ''
             directories:
                 avd_0nyf3ro8cfmy:
-                    path: /var/www/penates
+                    path: /var/www/penates/dist
                     options:
                         - Indexes
                         - FollowSymlinks

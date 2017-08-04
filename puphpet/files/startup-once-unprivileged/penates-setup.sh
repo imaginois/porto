@@ -1,5 +1,6 @@
 #!/bin/sh
 cd /var/www/penates
-sudo npm i -g yarn webpack webpack-dev-server
+sudo apt-get upgrade nodejs -y
+sudo npm i -g yarn webpack@3 webpack-dev-server
 sudo yarn install
 yarn run build
