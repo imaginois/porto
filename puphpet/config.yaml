@@ -28,6 +28,9 @@ vagrantfile:
                                 vflmnfp_6haw0ubngcev:
                                     host: '3000'
                                     guest: '3000'
+                                vflmnfp_9hjkfjg9rjrf:
+                                    host: '3100'
+                                    guest: '3100'
                                 vflmnfp_d885jtf8gja9:
                                     host: '2100'
                                     guest: '22'
