@@ -2,6 +2,20 @@ vagrantfile:
     target: local
     vm:
         provider:
+            digitalocean:
+                image: ubuntu-16-04-x64
+                token: 4732f2ec81ef7bdcf7c05368c7c96e6c0161f9b5c66d63d579417639ec6da2d5
+                ssh_key_name: porto.vagrant
+                setup: true
+                ipv6: false
+                private_networking: false
+                backups_enabled: false
+                machines:
+                    vfdom_y2z2tc0nz40c:
+                        id: digitalocean1
+                        hostname: digitalocean1.puphpet
+                        region: nyc1
+                        size: 512mb
             local:
                 box: puphpet/ubuntu1604-x64
                 box_url: puphpet/ubuntu1604-x64
@@ -219,7 +233,7 @@ vagrantfile:
         username: vagrant
         guest_port: 'false'
         keep_alive: '1'
-        forward_agent: 'false'
+        forward_agent: 'true'
         forward_x11: 'false'
         shell: 'bash -l'
         insert_key: 'false'
