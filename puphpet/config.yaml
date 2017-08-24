@@ -39,9 +39,9 @@ vagrantfile:
                         network:
                             private_network: 192.168.200.100
                             forwarded_port:
-                                vflmnfp_6haw0ubngcev:
-                                    host: '3000'
-                                    guest: '3000'
+                                # vflmnfp_6haw0ubngcev:
+                                #     host: '3000'
+                                #     guest: '3000'
                                 vflmnfp_9hjkfjg9rjrf:
                                     host: '3100'
                                     guest: '3100'
