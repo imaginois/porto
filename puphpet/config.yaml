@@ -1,20 +1,20 @@
 vagrantfile:
-    target: local
+    target: digitalocean
     vm:
         provider:
             digitalocean:
                 image: ubuntu-16-04-x64
-                token: 4732f2ec81ef7bdcf7c05368c7c96e6c0161f9b5c66d63d579417639ec6da2d5
-                ssh_key_name: porto.vagrant
+                token: c4e807993ef34d4957eb9b6f1259a55c22fb419524e0e5e4de082c529e105f59
+                ssh_key_name: id_rsa
                 setup: true
                 ipv6: false
-                private_networking: false
+                private_networking: true
                 backups_enabled: false
                 machines:
-                    vfdom_y2z2tc0nz40c:
-                        id: digitalocean1
-                        hostname: digitalocean1.puphpet
-                        region: nyc1
+                    vfdom_ynxy7x8ng7f8:
+                        id: vagrant-porto
+                        hostname: porto.ocead
+                        region: sfo1
                         size: 512mb
             local:
                 box: puphpet/ubuntu1604-x64
@@ -156,28 +156,6 @@ vagrantfile:
                     auto: 'true'
                 owner: www-data
                 group: www-data
-            vflsf_afgf15s8vyle:
-                source: ../Minerva_WebClient/ML
-                target: /var/www/webclient
-                sync_type: default
-                smb:
-                    smb_host: ''
-                    smb_username: ''
-                    smb_password: ''
-                    mount_options:
-                        dir_mode: '0775'
-                        file_mode: '0664'
-                rsync:
-                    args:
-                        - '--verbose'
-                        - '--archive'
-                        - '-z'
-                    exclude:
-                        - .vagrant/
-                        - .git/
-                    auto: 'true'
-                owner: www-data
-                group: www-data
         usable_port_range:
             start: 10200
             stop: 10500
@@ -185,7 +163,7 @@ vagrantfile:
     ssh:
         host: 'false'
         port: 'false'
-        private_key_path: 'false'
+        private_key_path: '~/.ssh/id_rsa'
         username: vagrant
         guest_port: 'false'
         keep_alive: '1'
@@ -314,43 +292,6 @@ apache:
         - rewrite
         - headers
     vhosts:
-        av_penateslocal:
-            servername: penates.local
-            serveraliases:
-                - www.penates.local
-            docroot: /var/www/penates/dist
-            port: '80'
-            setenv:
-                - 'APP_ENV dev'
-            setenvif:
-                - 'Authorization "(.*)" HTTP_AUTHORIZATION=$1'
-            custom_fragment: ''
-            ssl: '0'
-            ssl_cert: ''
-            ssl_key: ''
-            ssl_chain: ''
-            ssl_certs_dir: ''
-            ssl_protocol: ''
-            ssl_cipher: ''
-            directories:
-                avd_0nyf3ro8cfmy:
-                    path: /var/www/penates/dist
-                    options:
-                        - Indexes
-                        - FollowSymlinks
-                        - MultiViews
-                    allow_override:
-                        - All
-                    require:
-                        - 'all granted'
-                    custom_fragment: ''
-                    files_match:
-                        avdfm_hu7vgb28thw9:
-                            path: \.php$
-                            sethandler: 'proxy:fcgi://127.0.0.1:9000'
-                            custom_fragment: ''
-                            provider: filesmatch
-                    provider: directory
         av_vstblocal:
             servername: vstb.local
             serveraliases:
