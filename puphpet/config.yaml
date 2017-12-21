@@ -156,28 +156,6 @@ vagrantfile:
                     auto: 'true'
                 owner: www-data
                 group: www-data
-            vflsf_afgf15s8vyle:
-                source: ../Minerva_WebClient/ML
-                target: /var/www/webclient
-                sync_type: default
-                smb:
-                    smb_host: ''
-                    smb_username: ''
-                    smb_password: ''
-                    mount_options:
-                        dir_mode: '0775'
-                        file_mode: '0664'
-                rsync:
-                    args:
-                        - '--verbose'
-                        - '--archive'
-                        - '-z'
-                    exclude:
-                        - .vagrant/
-                        - .git/
-                    auto: 'true'
-                owner: www-data
-                group: www-data
         usable_port_range:
             start: 10200
             stop: 10500
@@ -314,43 +292,6 @@ apache:
         - rewrite
         - headers
     vhosts:
-        av_penateslocal:
-            servername: penates.local
-            serveraliases:
-                - www.penates.local
-            docroot: /var/www/penates/dist
-            port: '80'
-            setenv:
-                - 'APP_ENV dev'
-            setenvif:
-                - 'Authorization "(.*)" HTTP_AUTHORIZATION=$1'
-            custom_fragment: ''
-            ssl: '0'
-            ssl_cert: ''
-            ssl_key: ''
-            ssl_chain: ''
-            ssl_certs_dir: ''
-            ssl_protocol: ''
-            ssl_cipher: ''
-            directories:
-                avd_0nyf3ro8cfmy:
-                    path: /var/www/penates/dist
-                    options:
-                        - Indexes
-                        - FollowSymlinks
-                        - MultiViews
-                    allow_override:
-                        - All
-                    require:
-                        - 'all granted'
-                    custom_fragment: ''
-                    files_match:
-                        avdfm_hu7vgb28thw9:
-                            path: \.php$
-                            sethandler: 'proxy:fcgi://127.0.0.1:9000'
-                            custom_fragment: ''
-                            provider: filesmatch
-                    provider: directory
         av_vstblocal:
             servername: vstb.local
             serveraliases:
