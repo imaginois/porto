@@ -13,7 +13,7 @@ vagrantfile:
                 machines:
                     vfdom_ynxy7x8ng7f8:
                         id: vagrant-porto
-                        hostname: porto.ocead
+                        hostname: porto.ocean
                         region: sfo1
                         size: 512mb
             local:
