@@ -1,2 +1,2 @@
-ProxyPass /rest/api http://172.31.10.28:9081
+ProxyPass /rest/api http://192.168.4.155:9081
 ProxyPassReverse /rest/api http://localhost/VSTB/ML

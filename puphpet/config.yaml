@@ -310,7 +310,7 @@ apache:
             servername: staging.vstb.local
             serveraliases:
                 - www.staging.vstb.local
-            docroot: /var/www/vstb/staging/src
+            docroot: /var/www/vstb/GA/src
             port: '80'
             custom_fragment: '/home/vagrant/custom_fragments/vstb'
             ssl: '0'
