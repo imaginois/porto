@@ -48,6 +48,9 @@ vagrantfile:
                                 vflmnfp_d885jtf8gja9:
                                     host: '2100'
                                     guest: '22'
+                                vflmnfp_umjfi885jfjq:
+                                    host: '8080'
+                                    guest: '8080'
                                 vflmnfp_umym08mphyyd:
                                     host: '8100'
                                     guest: '80'
