@@ -4,17 +4,17 @@ vagrantfile:
         provider:
             digitalocean:
                 image: ubuntu-16-04-x64
-                token: 4732f2ec81ef7bdcf7c05368c7c96e6c0161f9b5c66d63d579417639ec6da2d5
-                ssh_key_name: porto.vagrant
+                token: c4e807993ef34d4957eb9b6f1259a55c22fb419524e0e5e4de082c529e105f59
+                ssh_key_name: id_rsa
                 setup: true
                 ipv6: false
                 private_networking: false
                 backups_enabled: false
                 machines:
-                    vfdom_y2z2tc0nz40c:
-                        id: digitalocean1
-                        hostname: digitalocean1.puphpet
-                        region: nyc1
+                    vfdom_ynxy7x8ng7f8:
+                        id: porto-ocean
+                        hostname: porto.ocean
+                        region: ams3
                         size: 512mb
             local:
                 box: puphpet/ubuntu1604-x64
@@ -164,16 +164,11 @@ vagrantfile:
             stop: 10500
         post_up_message: ''
     ssh:
-        host: 'false'
-        port: 'false'
-        private_key_path: 'false'
-        username: vagrant
-        guest_port: 'false'
-        keep_alive: '1'
+        username: imaginois
+        private_key_path: ~/.ssh/id_rsa
+        public_key_path: ~/.ssh/id_rsa.pub
         forward_agent: 'true'
-        forward_x11: 'false'
-        shell: 'bash -l'
-        insert_key: 'false'
+        insert_key: 'true'
     vagrant:
         host: detect
     proxy:
