@@ -48,7 +48,7 @@ vagrantfile:
                                 vflmnfp_d885jtf8gja9:
                                     host: '2100'
                                     guest: '22'
-                               vflmnfp_umym08mphyyd:
+                                vflmnfp_umym08mphyyd:
                                     host: '8100'
                                     guest: '80'
                                 vflmnfp_89as89jhj1po:
@@ -161,11 +161,16 @@ vagrantfile:
             stop: 10500
         post_up_message: ''
     ssh:
-        username: imaginois
-        private_key_path: ~/.ssh/id_rsa
-        public_key_path: ~/.ssh/id_rsa.pub
+        host: 'false'
+        port: 'false'
+        private_key_path: 'false'
+        username: vagrant
+        guest_port: 'false'
+        keep_alive: '1'
         forward_agent: 'true'
-        insert_key: 'true'
+        forward_x11: 'false'
+        shell: 'bash -l'
+        insert_key: 'false'
     vagrant:
         host: detect
     proxy:
