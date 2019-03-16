@@ -90,53 +90,9 @@ vagrantfile:
                     - '--verbose'
                     - '--hiera_config /vagrant/puphpet/puppet/hiera.yaml'
         synced_folder:
-            vflsf_qjrvvdg34pfn:
-                source: ../VSTB/
-                target: /var/www/vstb
-                sync_type: default
-                smb:
-                    smb_host: ''
-                    smb_username: ''
-                    smb_password: ''
-                    mount_options:
-                        dir_mode: '0775'
-                        file_mode: '0664'
-                rsync:
-                    args:
-                        - '--verbose'
-                        - '--archive'
-                        - '-z'
-                    exclude:
-                        - .vagrant/
-                        - .git/
-                    auto: 'true'
-                owner: www-data
-                group: www-data
-            vflsf_pfjegh3jgfhe8:
-                source: ../session/
-                target: /var/www/session
-                sync_type: default
-                smb:
-                    smb_host: ''
-                    smb_username: ''
-                    smb_password: ''
-                    mount_options:
-                        dir_mode: '0775'
-                        file_mode: '0664'
-                rsync:
-                    args:
-                        - '--verbose'
-                        - '--archive'
-                        - '-z'
-                    exclude:
-                        - .vagrant/
-                        - .git/
-                    auto: 'true'
-                owner: www-data
-                group: www-data
             vflsf_39ndp6ett5gd:
-                source: ../Webclient/ML
-                target: /var/www/stb
+                source: ./www
+                target: /var/www/html
                 sync_type: default
                 smb:
                     smb_host: ''
@@ -292,81 +248,11 @@ apache:
         - rewrite
         - headers
     vhosts:
-        av_vstblocal:
-            servername: vstb.local
+        av_example:
+            servername: porto.local
             serveraliases:
-                - www.vstb.local
-            docroot: /var/www/vstb/ML/src
-            port: '80'
-            custom_fragment: '/home/vagrant/custom_fragments/vstb'
-            ssl: '0'
-            ssl_cert: ''
-            ssl_key: ''
-            ssl_chain: ''
-            ssl_certs_dir: ''
-            ssl_protocol: ''
-            ssl_cipher: ''
-        av_stagingvstblocal:
-            servername: staging.vstb.local
-            serveraliases:
-                - www.staging.vstb.local
-            docroot: /var/www/vstb/GA/src
-            port: '80'
-            custom_fragment: '/home/vagrant/custom_fragments/vstb'
-            ssl: '0'
-            ssl_cert: ''
-            ssl_key: ''
-            ssl_chain: ''
-            ssl_certs_dir: ''
-            ssl_protocol: ''
-            ssl_cipher: ''
-        av_session:
-            servername: session
-            serveraliases:
-                - www.session
-            docroot: /var/www/session
-            port: '80'
-            custom_fragment: '/home/vagrant/custom_fragments/session'
-            ssl: '0'
-            ssl_cert: ''
-            ssl_key: ''
-            ssl_chain: ''
-            ssl_certs_dir: ''
-            ssl_protocol: ''
-            ssl_cipher: ''
-        av_stblocal:
-            servername: stb.local
-            serveraliases:
-                - www.stb.local
-            docroot: /var/www/stb/source/
-            port: '80'
-            custom_fragment: '/home/vagrant/custom_fragments/stb'
-            ssl: '0'
-            ssl_cert: ''
-            ssl_key: ''
-            ssl_chain: ''
-            ssl_certs_dir: ''
-            ssl_protocol: ''
-            ssl_cipher: ''
-        av_webclientlocal:
-            servername: webclient.local
-            serveraliases:
-                - www.webclient.local
-            docroot: /var/www/webclient
-            port: '80'
-            custom_fragment: ''
-            ssl: '0'
-            ssl_cert: ''
-            ssl_key: ''
-            ssl_chain: ''
-            ssl_certs_dir: ''
-            ssl_protocol: ''
-            ssl_cipher: ''
-        av_ladybuglocal:
-            servername: ladybug.local
-            serveraliases:
-                - www.ladybug.local
-            docroot: /var/www/ladybug/public
+                - www.porto.local
+            docroot: /var/www/html
             port: '80'
             custom_fragment: ''
             ssl: '0'
@@ -378,7 +264,7 @@ apache:
             ssl_cipher: ''
             directories:
                 avd_0nyf3ro8cfmy:
-                    path: /var/www/ladybug/public
+                    path: /var/www/html
                     options:
                         - Indexes
                         - FollowSymlinks
