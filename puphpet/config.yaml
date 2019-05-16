@@ -4,7 +4,7 @@ vagrantfile:
         provider:
             digitalocean:
                 image: ubuntu-16-04-x64
-                token: c4e807993ef34d4957eb9b6f1259a55c22fb419524e0e5e4de082c529e105f59
+                token: 
                 ssh_key_name: id_rsa
                 setup: true
                 ipv6: false
